@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PESQUISA</class>
+ <widget class="QWidget" name="PESQUISA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>PointingHandCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>PESQUISA</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 59, 89);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLineEdit" name="txt08_filtro_codigo">
+       <property name="maximumSize">
+        <size>
+         <width>150</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+background-color: rgb(61, 61, 61);
+}
+QLabel{
+font: 87 12pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+
+}
+QLineEdit{
+border: 0px;
+color: rgb(255, 255, 255);
+border-bottom: 2px solid  rgb(0, 111, 167);
+
+}
+QPushButton{
+background-color: rgb(61, 61, 61);
+border-radius: 15px;
+color: rgb(255, 255, 255);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QPushButton:hover{
+background-color: rgb(0, 111, 167);
+border-radius: 15px;
+color: rgb(0, 0, 0);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QTableWidget{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+gridline-color: rgb(0, 111, 167);
+font-size: 12pt;
+color: #000000;
+}
+QHeaderView::section{
+background-color: rgb(0, 111, 167);
+border: 1px solid rgb(0, 0, 0);
+font-size:12pt;
+}
+QTableWidget QTableCornerButton::section{
+background-color: rgb(0, 0, 0);
+border: 1px solid rgb(0,111, 167);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>CODIGO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt08_filtro">
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>18</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QFrame{
+background-color: rgb(61, 61, 61);
+}
+QLabel{
+font: 87 12pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+
+}
+QLineEdit{
+border: 0px;
+color: rgb(255, 255, 255);
+border-bottom: 2px solid  rgb(0, 111, 167);
+
+}
+QPushButton{
+background-color: rgb(61, 61, 61);
+border-radius: 15px;
+color: rgb(255, 255, 255);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QPushButton:hover{
+background-color: rgb(0, 111, 167);
+border-radius: 15px;
+color: rgb(0, 0, 0);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QTableWidget{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+gridline-color: rgb(0, 111, 167);
+font-size: 12pt;
+color: #000000;
+}
+QHeaderView::section{
+background-color: rgb(0, 111, 167);
+border: 1px solid rgb(0, 0, 0);
+font-size:12pt;
+}
+QTableWidget QTableCornerButton::section{
+background-color: rgb(0, 0, 0);
+border: 1px solid rgb(0,111, 167);
+}</string>
+       </property>
+       <property name="placeholderText">
+        <string>PESQUISA</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableWidget" name="lst08_lista">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame{
+background-color: rgb(61, 61, 61);
+}
+QLabel{
+font: 87 12pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+
+}
+QLineEdit{
+border: 0px;
+color: rgb(255, 255, 255);
+border-bottom: 2px solid  rgb(0, 111, 167);
+font: 75 12pt &quot;Times New Roman&quot;;
+}
+QPushButton{
+background-color: rgb(61, 61, 61);
+border-radius: 15px;
+color: rgb(255, 255, 255);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QPushButton:hover{
+background-color: rgb(0, 111, 167);
+border-radius: 15px;
+color: rgb(0, 0, 0);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+QTableWidget{
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+gridline-color: rgb(0, 111, 167);
+font-size: 12pt;
+color: #000000;
+}
+QHeaderView::section{
+background-color: rgb(0, 111, 167);
+border: 1px solid rgb(0, 0, 0);
+font-size:12pt;
+}
+QTableWidget QTableCornerButton::section{
+background-color: rgb(0, 0, 0);
+border: 1px solid rgb(0,111, 167);
+}</string>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>false</bool>
+     </property>
+     <property name="autoScrollMargin">
+      <number>15</number>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropOverwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>false</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SingleSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideMiddle</enum>
+     </property>
+     <property name="verticalScrollMode">
+      <enum>QAbstractItemView::ScrollPerItem</enum>
+     </property>
+     <property name="showGrid">
+      <bool>false</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+     <property name="cornerButtonEnabled">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>100</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>38</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>30</number>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>23</number>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>CÓDIGO</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DESCRIÇÃO</string>
+      </property>
+      <property name="font">
+       <font>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PR1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ESTOQUE</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>DIF</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PREÇO/VENDA</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
